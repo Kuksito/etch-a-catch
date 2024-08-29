@@ -44,7 +44,7 @@ function customGrid(){
         container.removeChild(container.firstChild);
     }
     let numberOfSquares = prompt('Enter a number between 1 and 100');
-    if(numberOfSquares > 100 || numberOfSquares <= 1) {
+    if(numberOfSquares > 100 || numberOfSquares < 2) {
         numberOfSquares = prompt('Error! Enter a number between 1 and 100')
     };
     return createGridOfDivs(numberOfSquares);
